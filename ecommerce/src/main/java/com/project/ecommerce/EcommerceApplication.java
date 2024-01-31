@@ -32,22 +32,22 @@ public class EcommerceApplication implements CommandLineRunner {
 		try {
 		System.out.println("starting code");
 	
-		User user=new User();
-		user.setFirstName("Hirak");
-		user.setLastName("Babariya");
-		user.setName("HirakBabariya");
-		user.setPassword(this.bCryptPasswordEncoder.encode("hirak@123"));
-		
-		Role role=new Role();
-		role.setName("Admin");
-		role.setDesc("Admin Role");
-		
-		Set<Role> userRoleSet = new HashSet<>();
-		userRoleSet.add(role);
-		user.setRoles(userRoleSet);
-		
-		User user1= this.userService.registerNewUser(user);
-		System.out.println(user1.getName());
+//		User user=new User();
+//		user.setFirstName("Hirak");
+//		user.setLastName("Babariya");
+//		user.setName("HirakBabariya");
+//		user.setPassword(this.bCryptPasswordEncoder.encode("hirak@123"));
+//		
+//		Role role=new Role();
+//		role.setName("Admin");
+//		role.setDesc("Admin Role");
+//		
+//		Set<Role> userRoleSet = new HashSet<>();
+//		userRoleSet.add(role);
+//		user.setRoles(userRoleSet);
+//		
+//		User user1= this.userService.registerNewUser(user);
+//		System.out.println(user1.getName());
 		}catch(Exception e ) {
 			e.printStackTrace();
 		}
